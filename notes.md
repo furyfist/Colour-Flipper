@@ -1,6 +1,6 @@
 Things i learnt: 
 1. Why we use “16777215" when generating random hex colors:
-    > 1. Hex colors use the RGB model, where each color is represented as #RRGGBB, with Red, Green, and Blue values ranging from 00 to FF (0 to 255 in decimal).
+     1. Hex colors use the RGB model, where each color is represented as #RRGGBB, with Red, Green, and Blue values ranging from 00 to FF (0 to 255 in decimal).
 
       2. The total number of possible colors in the RGB model is 256 × 256 × 256 = 16,777,216, meaning the color range in decimal is from 0 (#000000) to 16,777,215 (#FFFFFF).
 
@@ -13,7 +13,7 @@ Things i learnt:
     This method guarantees that every randomly generated color is valid and properly formatted in the #RRGGBB format.
 
 2. Adding <script src="script.js"></script> at the end of html file, not in start.
-    > The issue is that  JavaScript file (script.js) is loaded before the HTML content is fully rendered. Since the <script> tag is placed in the <head> section,    when the script executes, it tries to select elements (#colour and #flip) before they exist in the DOM. This results in null values, and the event listener does not get attached properly.
+     The issue is that  JavaScript file (script.js) is loaded before the HTML content is fully rendered. Since the <script> tag is placed in the <head> section,    when the script executes, it tries to select elements (#colour and #flip) before they exist in the DOM. This results in null values, and the event listener does not get attached properly.
 
 Step by Step Algorithm:
 > Tutorial link : https://www.webdevmonk.com/projects/flip-color-project.html
